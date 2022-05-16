@@ -1,5 +1,6 @@
 #include "casino.h"
 #include "blackjack.h"
+#include "chip.h"
 #include <iostream>
 #include <string>
 #include <random>
@@ -7,9 +8,19 @@
 
 
 blackjack::blackjack() {
-    int house = (rand() % 10 + 1)+(rand() % 10 + 1);
-    int player = 0;
-    int round = 0;
+    int n = rand() % 10;
+    int m = 0;
+    if (n==9) {
+        m = rand() % 3;
+    }
+    int x = rand() % 4;
+    house = (rand() % 10 + 1)+(rand() % 10 + 1);
+    player = n+1;
+    round = 1;
+    hand[0][0] = cards[n + m]; hand[0][1] = suit[x];
+    
+    cout << "You have: " << cards[n + m] << " of " << suit[x];
+
 }
 
 blackjack::~blackjack() {
