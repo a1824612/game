@@ -1,0 +1,14 @@
+#include "casino.h"  
+#include <string>
+using namespace std; 
+
+casino::casino(){
+    chips = 0;
+    cout<<"WELCOME TO THE CASINO!"<<endl; 
+    cout<<"please choose a number corresponding to the game you wish to play: \n";
+    cout<<"1.   Blackjack"<<endl;
+    cout<<"2.   Poker"<<endl;
+    cout<<"3.   Roulette"<<endl;
+    cout<<"Enter Number :";
+    cin>>game;
+}
