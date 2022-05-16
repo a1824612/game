@@ -14,7 +14,7 @@ int game;
 
 
 public: 
-    casino();
+    casino(int _chips);
 
 };
 
