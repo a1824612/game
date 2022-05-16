@@ -3,7 +3,7 @@
 using namespace std; 
 
 casino::casino(){
-    chips = 0;
+   
     cout<<"WELCOME TO THE CASINO!"<<endl; 
     cout<<"please choose a number corresponding to the game you wish to play: \n";
     cout<<"1.   Blackjack"<<endl;
