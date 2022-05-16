@@ -12,3 +12,10 @@ casino::casino(){
     cout<<"Enter Number :";
     cin>>game;
 }
+
+ int casino::get_chips(){
+     return chips;
+ }; 
+int casino::get_game(){
+    return game;
+};
