@@ -21,6 +21,7 @@ class blackjack {
         void recieve_card(); //Gives player their next card
         void print_hand();  //Prints players current hand
         bool went_bust();   //If player>21, return 1
+        bool compare();
 };
 
 
