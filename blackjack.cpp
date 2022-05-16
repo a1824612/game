@@ -36,7 +36,7 @@ void blackjack::recieve_card() {
     hand[round][0] = cards[n + m];
     hand[round][1] = suit[x];
     player = player + n + 1;
-    if went_bust() {
+    if (went_bust()) {
         cout << "BUST, house wins!" << endl;
         //Lost all bet chips
     }   
