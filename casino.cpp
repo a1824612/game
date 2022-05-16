@@ -11,6 +11,9 @@ casino::casino(){
     cout<<"3.   Roulette"<<endl;
     cout<<"Enter Number :";
     cin>>game;
+    cout<<endl;
+    cout<<"Enter the number of chips you want to play with: ";
+    cin>>chips;
 }
 
  int casino::get_chips(){

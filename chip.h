@@ -3,7 +3,7 @@
 
 #include <iostream> 
 #include "casino.h"
-uusing namespace std; 
+using namespace std; 
 
 class chip : public casino{
 
