@@ -22,10 +22,10 @@ void Play::run(){
       //  int bet = 0;
        // cout << "Your Bet: ";
       //  cin >> bet;
-        while(chips - bet < 0 && bet < 0){
+       /* while(chips - bet < 0 && bet < 0){
             cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
             cin >> bet;
-        }
+        }  */
         int gameStatus = 0;
         while (gameStatus == 0) { //somehow move all of this into its own function
             string hitsit = "NULL";
