@@ -10,7 +10,4 @@ casino::casino(){
 
  int casino::get_chips(){
      return chips;
- }; 
-int casino::get_game(){
-    return game;
-};
+ };

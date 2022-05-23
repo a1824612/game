@@ -6,6 +6,6 @@ class betEdit: public chip{
     public:
         void plus_chips(int bet);    //these functions will have differtent implementations in each game
         void minus_chips(int bet);
-}
+};
 
 #endif

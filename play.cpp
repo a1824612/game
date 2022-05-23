@@ -3,8 +3,6 @@
 #include "play.h"
 using namespace std; 
 
-void Play::plus_chips(){cout<<"arsse";};    //these functions will have differtent implementations in each game
-void Play::minus_chips(){cout<<"arsse";};
 void Play::run(){
     string yesno;
     cout << "Start Game: ";
@@ -44,7 +42,7 @@ void Play::run(){
                 cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
         }
-        
+
         cout << "Play again?: ";
         cin >> yesno;
         while (yesno != "yes" && yesno != "no") {
