@@ -10,7 +10,6 @@
 
 
 blackjack::blackjack() {
-    int play;
     cout << "Here are the rules:" << endl << "-The goal of blackjack is to beat the house's hand without going over 21.\n-Face cards are worth 10. Aces worth 1.\n-The player starts with 1 cards and the house has 2 cards hidden from the player.\n-You must enter the number of chips you wish to bet before recieving your cards. The higher the bet the higher the reward.\n-You can 'hit' to recieve another card or 'sit' to face the dealer.\n\n" << endl;                    // insert game rules
     cout<< "Enter the '?' key when asked to sit or hit to view your hand"<<endl;
     cout<<endl;
