@@ -11,8 +11,9 @@ class Play: public chip{
 
 
     public: 
-        void plus_chips(){cout<<"poo";};    //these functions will have differtent implementations in each game
-        void minus_chips(){cout<<"poo";};
+        void plus_chips();    //these functions will have differtent implementations in each game
+        void minus_chips();
+        void run();
 
 
 
