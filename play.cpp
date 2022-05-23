@@ -40,7 +40,7 @@ void Play::run(){
                 if(b->compare()) {
                     cout << "You lose!" << endl;
                     //game1.chips = game1.chips - bet ;
-                    initialiser->betEdit::minus_chips(bet);
+                    initialiser->game1::minus_chips(bet);
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
