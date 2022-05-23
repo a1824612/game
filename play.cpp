@@ -39,8 +39,7 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b->compare()) {
                     cout << "You lose!" << endl;
-                    game1.chips =9 ;
-                    cout<<"HI!!!"<<endl;
+                    game1.chips = game1.chips - bet ;
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
@@ -58,7 +57,7 @@ void Play::run(){
                 cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
         }
-        cout << "Your total winning: " << chips << " chips" << endl;
+        cout << "Your total winning: " << game1.chips << " chips" << endl;
         cout << "Play again?: ";
         cin >> yesno;
         while (yesno != "yes" && yesno != "no") {
