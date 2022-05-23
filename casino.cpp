@@ -3,14 +3,9 @@
 using namespace std; 
 
 casino::casino(){
-   
+   chips = 1000;
     cout<<"WELCOME TO BALCKJACK!"<<endl; 
-    cout<<"Enter the number of chips you want to play with: ";
-    cin>>chips;
-    while (chips<=0 || chips>10000000){
-        cout<<"Value must be between 0 and 10,000,000: "; 
-        cin>>chips;
-    }
+    cout<<"We have given you 1000 chips to play with.";
 }
 
  int casino::get_chips(){
