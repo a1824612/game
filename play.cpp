@@ -8,7 +8,7 @@ void Play::minus_chips(){cout<<"arsse";};
 void Play::run(){
     string yesno;
     cout << "Start Game: ";
-    cin << 
+    cin << yesno;
     while (yesno == "yes") {
         blackjack b;
         int gameStatus = 0;
