@@ -17,11 +17,11 @@ void Play::run(){
         blackjack *b = new blackjack();
         cout << "below\n";
         
-        betEdit * initialiser;
         
-        int bet = 0;
-        cout << "Your Bet: ";
-        cin >> bet;
+        
+      //  int bet = 0;
+       // cout << "Your Bet: ";
+      //  cin >> bet;
         while(chips - bet < 0 && bet < 0){
             cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
             cin >> bet;
@@ -36,18 +36,18 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b->compare()) {
                     cout << "You lose!" << endl;
-                    initialiser->minus_chips(bet);
+                   // initialiser->minus_chips(bet);
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
-                    initialiser->plus_chips(bet);
+                   // initialiser->plus_chips(bet);
                     gameStatus = 1;            
                 }
             } else if (hitsit=="hit") {
                 b->recieve_card();
                 if (b->went_bust()) {
                     cout << "BUST, house wins!" << endl;
-                    initialiser->minus_chips(bet);
+                  //  initialiser->minus_chips(bet);
                     gameStatus = 1;
                 }
             } else {
