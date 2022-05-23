@@ -18,7 +18,7 @@ void Play::run(){
         
         blackjack *b = new blackjack();
         betEdit *initialiser;
-        int * chip = game1.get_chips();
+        int* chip = game1.get_chips();
         
         
        int bet = 0;
@@ -58,6 +58,7 @@ void Play::run(){
                 cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
         }
+        cout << *game1.get_chips() << endl;
         cout << "Your total winning: " << game1.chips << " chips" << endl;
         cout << "Play again?: ";
         cin >> yesno;
