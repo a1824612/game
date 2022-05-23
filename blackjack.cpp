@@ -41,6 +41,7 @@ bool blackjack::went_bust() {
 } 
 
 void blackjack::recieve_card() {    //would be good if this is a function to be used in constructor
+    Deck deck;
     int cardIndex = rand() % 10;
     int aboveNumberIndex = 0;
     if (cardIndex==9) {
@@ -56,12 +57,14 @@ void blackjack::recieve_card() {    //would be good if this is a function to be 
 }
 
 void blackjack::print_hand() {
+    Deck deck;
     for (int i = 0; i < round; i++) {
         cout << deck.hand[i][0] << " of " << deck.hand[i][1] << endl;
     }
 }
 
 bool blackjack::compare() {
+    
     if (house>=player) {
         return 1;
     } else {return 0;}
