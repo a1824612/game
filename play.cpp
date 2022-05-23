@@ -13,7 +13,9 @@ void Play::run(){
     }
 
     while (yesno == "yes") {
+        cout << "up\n";
         blackjack *b = new blackjack();
+        cout << "below\n";
         
         betEdit * initialiser;
         
