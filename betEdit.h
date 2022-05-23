@@ -4,8 +4,8 @@
 
 class betEdit: public chip{
     public:
-        virtual void plus_chips(int bet, int* chip);    //these functions will have differtent implementations in each game
-        virtual void minus_chips(int bet, int* chip);
+        void plus_chips(int bet, int* chip);    //these functions will have differtent implementations in each game
+        void minus_chips(int bet, int* chip);
 };
 
 #endif
