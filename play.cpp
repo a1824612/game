@@ -24,7 +24,7 @@ void Play::run(){
        int bet = 0;
        cout << "Your Bet: ";
        cin >> bet;
-        while(game1.chips - bet < 0 && bet < 0){
+        while(game1.chips - bet < 0 || bet < 0){
             cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
             cin >> bet;
         }  
