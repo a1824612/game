@@ -5,7 +5,7 @@
 
 using namespace std; 
 
-class Deck: public casino{
+class Deck{
     public: 
         string hand[10][2];
         string cards[13] = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
