@@ -6,6 +6,6 @@ void betEdit::plus_chips(int bet, int* chip) {
    *chip = *chip + bet;
 }
 
-void betEdit::minus_chips(int bet, int* chip) {
+virtual void betEdit::minus_chips(int bet, int* chip) {
     *chip = *chip - bet;
 }
