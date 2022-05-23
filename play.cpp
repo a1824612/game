@@ -18,7 +18,7 @@ void Play::run(){
         
         blackjack *b = new blackjack();
         betEdit *initialiser;
-        int * chip = game1.chips;
+        int * chip = *game1.chips;
         
         
        int bet = 0;
