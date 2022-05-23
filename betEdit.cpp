@@ -7,5 +7,5 @@ void betEdit::plus_chips(int bet) {
 }
 
 void betEdit::minus_chips(int bet) {
-    chips = casino::chips - bet;
+    chips = chips - bet;
 }
