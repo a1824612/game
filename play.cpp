@@ -39,7 +39,7 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b->compare()) {
                     cout << "You lose!" << endl;
-                    game1.chips = game1.chips - bet ;
+                    game1.chips =9 ;
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
