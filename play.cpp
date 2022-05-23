@@ -34,18 +34,18 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b.compare()) {
                     cout << "You lose!" << endl;
-                    initialiser->minus_chips(bet);
+                    //initialiser->minus_chips(bet);
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
-                    initialiser->plus_chips(bet);
+                    //initialiser->plus_chips(bet);
                     gameStatus = 1;            
                 }
             } else if (hitsit=="hit") {
                 b.recieve_card();
                 if (b.went_bust()) {
                     cout << "BUST, house wins!" << endl;
-                    initialiser->minus_chips(bet);
+                    //initialiser->minus_chips(bet);
                     gameStatus = 1;
                 }
             } else {
