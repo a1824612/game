@@ -1,10 +1,11 @@
 #ifndef DECK_H
 #define DECK_H 
 #include <string>
+#include "casion.h"
 
 using namespace std; 
 
-class Deck{
+class Deck: public casino{
 
 
         
