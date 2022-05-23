@@ -14,7 +14,7 @@ blackjack::blackjack() {
     cout << "Here are the rules:" << endl << "-The goal of blackjack is to beat the house's hand without going over 21.\n-Face cards are worth 10. Aces worth 1.\n-The player starts with 1 cards and the house has 2 cards hidden from the player.\n-You must enter the number of chips you wish to bet before recieving your cards. The higher the bet the higher the reward.\n-You can 'hit' to recieve another card or 'sit' to face the dealer.\n\n" << endl;                    // insert game rules
     cout<< "Enter the '?' key when asked to sit or hit to view your hand"<<endl;
     cout<<endl;
-    Deck deck;
+   
     int cardIndex = rand() % 10;    //make rand -> function to return random number between x and y
     int aboveNumberIndex = 0;
     if (cardIndex==9) {
@@ -43,7 +43,7 @@ bool blackjack::went_bust() {
 } 
 
 void blackjack::recieve_card() {    //would be good if this is a function to be used in constructor
-    Deck deck;
+    
     int cardIndex = rand() % 10;
     int aboveNumberIndex = 0;
     if (cardIndex==9) {
@@ -59,9 +59,9 @@ void blackjack::recieve_card() {    //would be good if this is a function to be 
 }
 
 void blackjack::print_hand() {
-    Deck deck;
+    
     for (int i = 0; i < round; i++) {
-        cout << deck.hand[i][0] << " of " << deck.hand[i][1] << endl;
+        cout << deck.hand[i][0] << deck.hand[i][1] << endl;
     }
 }
 
