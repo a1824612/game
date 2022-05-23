@@ -1,5 +1,5 @@
-#ifndef CASINO_H
-#define CASINO_H 
+#ifndef CHIP_H
+#define CHIP_H 
 
 #include <iostream> 
 #include "casino.h"
