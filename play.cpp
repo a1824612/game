@@ -8,6 +8,7 @@ void Play::run(){
     string yesno;
     cout << "Start Game: ";
     cin >> yesno;
+
     while (yesno != "yes" && yesno != "no") {
         cout << "Invalid Input! Expect 'yes' or 'no'" << endl;
         cin >> yesno;
@@ -17,7 +18,7 @@ void Play::run(){
         
         blackjack *b = new blackjack();
         
-        
+        betEdit *initialiser;        
         
         
        int bet = 0;
