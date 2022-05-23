@@ -40,6 +40,7 @@ void Play::run(){
                 if(b->compare()) {
                     cout << "You lose!" << endl;
                     game1.chips =9 ;
+                    cout<<"HI!!!"<<endl;
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
