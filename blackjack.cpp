@@ -23,6 +23,7 @@ blackjack::blackjack() {
     hand[0][1] = suit[suitIndex];
     
     cout << "You have: " << cards[cardIndex + aboveNumberIndex] << suit[suitIndex] << endl; //removed " of " since we will add symbolic expression
+ 
 }
 
 blackjack::~blackjack() {

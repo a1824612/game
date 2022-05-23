@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
 srand(time(NULL));
-  casino g1; 
+  casino game1; 
 
 //test what game needs to be activated
   if(g1.get_game() == 1){
