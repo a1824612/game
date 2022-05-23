@@ -2,21 +2,18 @@
 #define BLACKJACK_H
 
 #include<string>
-#include<iostream>
+#include<iostream> 
+#include<deck.h>
 
 using namespace std;
 
-class blackjack {
+class blackjack: public Deck {
     protected:
         int house;  //integer storing houses currect score
         int player; //integer storing palyers currect score
         int round;  //integer sotring the number of rounds that have passed
 
-        //move into a cards class
-        string hand[10][2];
-        string cards[13] = {"ace","2","3","4","5","6","7","8","9","10","jack","queen","king"};
-        string suit[4] = {"diamonds","clubs","spaids","hearts"};    //replace with symbols
-
+       
     public:
         blackjack();            //Default constructor sets player=0, house=rnd(1-12)+rnd(1-12), hand[] = 0
         ~blackjack();           //Default destructor
