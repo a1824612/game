@@ -5,7 +5,7 @@
 #include "blackjack.h"
 using namespace std; 
 
-class chip: public blackjack {
+class chip: public casino {
 
 //this class will be an abstract class that contains no data members, only pure virtual functions that determine how many chips are won and how many chips are placed in a bet 
 
