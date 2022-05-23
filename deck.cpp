@@ -1,5 +1,5 @@
 #include <string>
-#include "Deck.h"
+#include "deck.h"
 using namespace std; 
 
 Deck::Deck(){

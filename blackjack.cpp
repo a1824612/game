@@ -20,10 +20,10 @@ blackjack::blackjack() {
     house = (rand() % 10 + 1)+(rand() % 10 + 1);
     player = cardIndex+1;           //cardIndex+1 since cardIndex is used in the cards array
     round = 1;
-    hand[0][0] = cards[cardIndex + aboveNumberIndex]; 
-    hand[0][1] = suit[suitIndex];
+    Deck.hand[0][0] = Deck.cards[cardIndex + aboveNumberIndex]; 
+    Deck.hand[0][1] = Deck.suit[suitIndex];
     
-    cout << "You have: " << cards[cardIndex + aboveNumberIndex] << suit[suitIndex] << endl; //removed " of " since we will add symbolic expression
+    cout << "You have: " << Deck.cards[cardIndex + aboveNumberIndex] << Deck.suit[suitIndex] << endl; //removed " of " since we will add symbolic expression
  
 }
 
@@ -45,9 +45,9 @@ void blackjack::recieve_card() {    //would be good if this is a function to be 
         aboveNumberIndex = rand() % 3;
     }
     int suitIndex = rand() % 4;
-    cout << "Recieved: " << cards[cardIndex + aboveNumberIndex] << suit[suitIndex]<<endl;
-    hand[round][0] = cards[cardIndex + aboveNumberIndex];
-    hand[round][1] = suit[suitIndex];
+    cout << "Recieved: " << Deck.cards[cardIndex + aboveNumberIndex] << Deck.suit[suitIndex]<<endl;
+    Deck.hand[round][0] = Deck.cards[cardIndex + aboveNumberIndex];
+    Deck.hand[round][1] = Deck.suit[suitIndex];
     player = player + cardIndex + 1;
 
     round++;       
@@ -55,7 +55,7 @@ void blackjack::recieve_card() {    //would be good if this is a function to be 
 
 void blackjack::print_hand() {
     for (int i = 0; i < round; i++) {
-        cout << hand[i][0] << " of " << hand[i][1] << endl;
+        cout << Deck.hand[i][0] << " of " << Deck.hand[i][1] << endl;
     }
 }
 
