@@ -63,6 +63,7 @@ void blackjack::print_hand() {
     for (int i = 0; i < round; i++) {
         cout << deck.hand[i][0] << deck.hand[i][1] << endl;
     }
+    cout<<"Current total score: "<<player<<endl;
 }
 
 bool blackjack::compare() {
