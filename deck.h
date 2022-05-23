@@ -1,11 +1,11 @@
 #ifndef DECK_H
 #define DECK_H 
 #include <string>
-#include "casino.h"
+//#include "casino.h"
 
 using namespace std; 
 
-class Deck: public casino{
+class Deck{
 
 
         
