@@ -7,7 +7,7 @@
 
 class Play: public betEdit{
     public: 
-        void run();
+        void run(); //function that will execute the blackjack game
 
 };
 

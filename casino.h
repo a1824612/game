@@ -6,17 +6,12 @@
 using namespace std; 
 
 class casino{
-
-    protected: 
-
-       
-       
-
+    protected:
 
     public: 
-        int chips;  //integer storing the number of chips the player has
-        casino();           //default casino constructor: ask player for the number of chips they wish to play with and the game they wish to play
-        int* get_chips();    //function to return the number of chips the player currently has
+        int chips;          //integer storing the number of chips the player has
+        casino();           //default casino constructor: welcome player to the game
+        int* get_chips();   //function to return a pointer to the number of chips the player currently has
     
 };
 

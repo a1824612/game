@@ -8,14 +8,11 @@
 using namespace std;  
 
 int main(){
-    srand(time(NULL)); 
+    srand(time(NULL));  //seed the randomiser
      
-    Play *_blackjack;
+    Play *_blackjack;   //
 
-    _blackjack->run();
-
-
-
+    _blackjack->run();  //run the game
 
     return 0; 
 }

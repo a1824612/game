@@ -15,7 +15,7 @@ class blackjack: public Deck {
 
        
     public:
-        Deck deck;
+        Deck deck;              //public declaration of a deck object to be used in blackjack
         blackjack();            //Default constructor sets player=0, house=rnd(1-12)+rnd(1-12), hand[] = 0
         ~blackjack();           //Default destructor
         void recieve_card();    //Gives player their next card
