@@ -15,7 +15,7 @@ srand(time(NULL));
 
     blackjack b;
     int lost = 0;
-    while (lost == 0) {
+    while (lost == 0) { //somehow move all of this into its own function
         cout << lost << endl;
         string hitsit = "NULL";
         cout<<"Sit or hit?"<<endl; 
