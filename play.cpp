@@ -18,7 +18,7 @@ void Play::run(){
         
         blackjack *b = new blackjack();
         
-        betEdit *initialiser;        
+               
         
         
        int bet = 0;
@@ -39,18 +39,18 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b->compare()) {
                     cout << "You lose!" << endl;
-                    initialiser->minus_chips(bet);
+                    game1.chips = game1.chips - bet ;
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
-                    initialiser->plus_chips(bet);
+                    game1.chips = game1.chips + bet ;
                     gameStatus = 1;            
                 }
             } else if (hitsit=="hit") {
                 b->recieve_card();
                 if (b->went_bust()) {
                     cout << "BUST, house wins!" << endl;
-                   initialiser->minus_chips(bet);
+                   game1.chips = game1.chips - bet ;
                     gameStatus = 1;
                 }
             } else {
