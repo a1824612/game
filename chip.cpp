@@ -2,10 +2,10 @@
 #include "betEdit.h"
 #include "casino.h"
 
-void betEdit::plus_chips(int bet, int* chip) {
-   *chip = *chip + bet;
+void chip::plus_chips(int bet, int* chipa) {
+   *chipa = *chipa + bet;
 }
 
-void betEdit::minus_chips(int bet, int* chip) {
-    *chip = *chip - bet;
+void chip::minus_chips(int bet, int* chipa) {
+    *chipa = *chipa - bet;
 }
