@@ -44,6 +44,12 @@ void Play::run(){
                 cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
         }
+        cout << "Play again?: ";
+        cin >> yesno;
+        while (yesno != "yes" && yesno != "no") {
+        cout << "Invalid Input! Expect 'yes' or 'no'" << endl;
+        cin >> yesno;
+    }
     }
 
     cout << "Thanks for playing!" << endl;    
