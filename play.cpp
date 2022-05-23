@@ -13,9 +13,6 @@ void Play::run(){
     }
 
     while (yesno == "yes") {
-        blackjack b;
-        betEdit * initialiser;
-        
         int bet = 0;
         cout << "Your Bet: ";
         cin >> bet;
@@ -23,6 +20,9 @@ void Play::run(){
             cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
             cin >> bet;
         }
+        
+        blackjack b;
+        betEdit * initialiser;
 
         int gameStatus = 0;
         while (gameStatus == 0) { //somehow move all of this into its own function
@@ -34,12 +34,11 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b.compare()) {
                     cout << "You lose!" << endl;
-                    chips = chips - bet;
-                    //initialiser->minus_chips(bet);
+                    initialiser->minus_chips(bet);
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
-                    initialiser->minus_chips(bet);
+                    initialiser->plus_chips(bet);
                     gameStatus = 1;            
                 }
             } else if (hitsit=="hit") {
