@@ -10,8 +10,8 @@ int main(){
 srand(time(NULL));
   casino game1; 
 
-//test what game needs to be activated
-  if(g1.get_game() == 1){
+    //test what game needs to be activated
+ 
 
     blackjack b;
     int lost = 0;
@@ -42,7 +42,7 @@ srand(time(NULL));
         }
     }
 
-  }
+  
 
 
 
