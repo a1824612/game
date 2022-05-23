@@ -16,7 +16,6 @@ srand(time(NULL));
     blackjack b;
     int lost = 0;
     while (lost == 0) { //somehow move all of this into its own function
-        cout << lost << endl;
         string hitsit = "NULL";
         cout<<"Sit or hit?"<<endl; 
         cin>>hitsit;
@@ -24,14 +23,14 @@ srand(time(NULL));
             b.print_hand();
         }
         if(hitsit == "sit"){
-        if(b.compare()) {
-            cout << "You lose!" << endl;
-            //lose chips
-            lost = 1;
-        } else {
-            cout << "You win!" << endl;
-            //gain chips            
-        }
+            if(b.compare()) {
+                cout << "You lose!" << endl;
+                //lose chips
+                lost = 1;
+            } else {
+                cout << "You win!" << endl;
+                //gain chips            
+            }
         } else if (hitsit=="hit") {
             b.recieve_card();
             if (b.went_bust()) {
@@ -39,6 +38,9 @@ srand(time(NULL));
                 //Lost all bet chips
                 lost = 1;
             }
+        } else {
+            cout << "Input must be 'hit', 'sit', or '?'." << endl;
+            cin>>hitsit;
         }
     }
 
