@@ -5,36 +5,10 @@
 #include "blackjack.h"
 #include "chip.h"
 
-class Play: public chip{
-
-
-
-
+class Play: public betEdit{
     public: 
-        void plus_chips();    //these functions will have differtent implementations in each game
-        void minus_chips();
         void run();
 
-
-
-
-
-
-
-
-
-
 };
-
-
-
-
-
-
-
-
-
-
-
 
 #endif
