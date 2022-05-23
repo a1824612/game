@@ -13,6 +13,12 @@ void Play::run(){
     }
 
     while (yesno == "yes") {
+        blackjack b;
+        
+        betEdit * initialiser;
+        
+        betEdit * initialiser2;
+        
         int bet = 0;
         cout << "Your Bet: ";
         cin >> bet;
@@ -20,10 +26,6 @@ void Play::run(){
             cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
             cin >> bet;
         }
-        
-        blackjack b;
-        betEdit * initialiser;
-
         int gameStatus = 0;
         while (gameStatus == 0) { //somehow move all of this into its own function
             string hitsit = "NULL";
