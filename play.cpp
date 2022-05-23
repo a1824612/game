@@ -15,9 +15,7 @@ void Play::run(){
     while (yesno == "yes") {
         blackjack b;
         
-        betEdit * initialiser;
-        
-        betEdit * initialiser2;
+        //betEdit * initialiser;
         
         int bet = 0;
         cout << "Your Bet: ";
