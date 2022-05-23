@@ -3,8 +3,8 @@
 #include "play.h"
 using namespace std; 
 
-void Play::plus_chips();    //these functions will have differtent implementations in each game
-void Play::minus_chips();
+void Play::plus_chips(){cout<<"arsse";};    //these functions will have differtent implementations in each game
+void Play::minus_chips(){cout<<"arsse";};
 void Play::run(){
 
      blackjack b;

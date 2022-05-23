@@ -9,10 +9,15 @@ using namespace std;
 int main(){
 srand(time(NULL));
   casino game1; 
+  Play *_blackjack;
+
+  *_blackjack->run();
+
+
 
     //test what game needs to be activated
  
-
+/*
     blackjack b;
     int lost = 0;
     while (lost == 0) { //somehow move all of this into its own function
@@ -45,7 +50,7 @@ srand(time(NULL));
     }
 
   
-
+*/
 
 
 
