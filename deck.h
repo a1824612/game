@@ -1,10 +1,10 @@
 #ifndef DECK_H
 #define DECK_H 
 #include <string>
-#include "chip.h"
+
 using namespace std; 
 
-class Deck: public chip{
+class Deck{
 
 
         
