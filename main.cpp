@@ -12,7 +12,7 @@ srand(time(NULL));
   casino game1; 
   Play *_blackjack;
 
-  *_blackjack->run();
+  _blackjack->run();
 
 
 
