@@ -22,7 +22,7 @@ srand(time(NULL));
         if (hitsit == "?") {
             b.print_hand();
         }
-        if(hitsit == "sit"){
+        else if(hitsit == "sit"){
             if(b.compare()) {
                 cout << "You lose!" << endl;
                 //lose chips
@@ -31,7 +31,8 @@ srand(time(NULL));
                 cout << "You win!" << endl;
                 //gain chips            
             }
-        } else if (hitsit=="hit") {
+        } 
+        else if (hitsit=="hit") {
             b.recieve_card();
             if (b.went_bust()) {
                 cout << "BUST, house wins!" << endl;
