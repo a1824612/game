@@ -8,6 +8,7 @@
 using namespace std;  
 
 int main(){
+    srand(time(NULL)); 
     casino game1; 
     Play *_blackjack;
 

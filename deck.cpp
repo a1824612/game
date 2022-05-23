@@ -20,7 +20,7 @@ Deck::Deck(){
 
 
 int Deck::randi(int min, int max) {
-    srand(time(NULL)); 
+    
     int out = rand() % max + min;
     return out;
 }
