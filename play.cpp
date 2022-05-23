@@ -20,13 +20,13 @@ void Play::run(){
         
         
         
-      //  int bet = 0;
-       // cout << "Your Bet: ";
-      //  cin >> bet;
-       /* while(chips - bet < 0 && bet < 0){
+       int bet = 0;
+       cout << "Your Bet: ";
+       cin >> bet;
+        while(chips - bet < 0 && bet < 0){
             cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
             cin >> bet;
-        }  */
+        }  
 
         int gameStatus = 0;
         while (gameStatus == 0) { //somehow move all of this into its own function
@@ -38,25 +38,25 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b->compare()) {
                     cout << "You lose!" << endl;
-                   // initialiser->minus_chips(bet);
+                    initialiser->minus_chips(bet);
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
-                   // initialiser->plus_chips(bet);
+                    initialiser->plus_chips(bet);
                     gameStatus = 1;            
                 }
             } else if (hitsit=="hit") {
                 b->recieve_card();
                 if (b->went_bust()) {
                     cout << "BUST, house wins!" << endl;
-                  //  initialiser->minus_chips(bet);
+                   initialiser->minus_chips(bet);
                     gameStatus = 1;
                 }
             } else {
                 cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
         }
-       // cout << "Your total winning: " << chips << " chips" << endl;
+        cout << "Your total winning: " << chips << " chips" << endl;
         cout << "Play again?: ";
         cin >> yesno;
         while (yesno != "yes" && yesno != "no") {
