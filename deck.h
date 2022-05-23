@@ -4,7 +4,7 @@
 #include "chip.h"
 using namespace std; 
 
-class Deck: public chips{
+class Deck: public chip{
 
 
         
