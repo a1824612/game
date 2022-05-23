@@ -41,6 +41,7 @@ void Play::run(){
                     cout << "You lose!" << endl;
                     //game1.chips = game1.chips - bet ;
                     initialiser->betEdit::minus_chips(bet);
+                    hi
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
