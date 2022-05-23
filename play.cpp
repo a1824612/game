@@ -66,6 +66,7 @@ void Play::run(){
             cin >> yesno;
         }
     }
+    delete b;
 
     cout << "Thanks for playing!" << endl;    
 
