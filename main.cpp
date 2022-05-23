@@ -41,7 +41,6 @@ srand(time(NULL));
             }
         } else {
             cout << "Input must be 'hit', 'sit', or '?'." << endl;
-            cin>>hitsit;
         }
     }
 
