@@ -13,7 +13,7 @@ public:
 virtual void plus_chips() = 0;    //these functions will have differtent implementations in each game
 virtual void minus_chips() = 0;
 
-}:
+};
 
 
 #endif
