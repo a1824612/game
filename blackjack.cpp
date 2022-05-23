@@ -15,13 +15,13 @@ blackjack::blackjack() {
     cout<< "Enter the '?' key when asked to sit or hit to view your hand"<<endl;
     cout<<endl;
    
-    int cardIndex = rand() % 10;    //make rand -> function to return random number between x and y
+    int cardIndex = deck.randi(0,10);    //make rand -> function to return random number between x and y
     int aboveNumberIndex = 0;
     if (cardIndex==9) {
-        aboveNumberIndex = rand() % 3;
+        aboveNumberIndex = deck.randi(0,3);
     }
-    int suitIndex = rand() % 4;
-    house = (rand() % 10 + 1)+(rand() % 10 + 1);
+    int suitIndex = deck.randi(0,4);
+    house = deck.randi(1,10)+deck.randi(1,10);
     player = cardIndex+1;           //cardIndex+1 since cardIndex is used in the cards array
     round = 1;
     deck.hand[0][0] = deck.cards[cardIndex + aboveNumberIndex]; 
@@ -44,12 +44,12 @@ bool blackjack::went_bust() {
 
 void blackjack::recieve_card() {    //would be good if this is a function to be used in constructor
     
-    int cardIndex = rand() % 10;
+    int cardIndex = deck.randi(0,10);
     int aboveNumberIndex = 0;
     if (cardIndex==9) {
-        aboveNumberIndex = rand() % 3;
+        aboveNumberIndex = deck.randi(0,3);
     }
-    int suitIndex = rand() % 4;
+    int suitIndex = deck.randi(0,4);
     cout << "Recieved: " << deck.cards[cardIndex + aboveNumberIndex] << deck.suit[suitIndex]<<endl;
     deck.hand[round][0] = deck.cards[cardIndex + aboveNumberIndex];
     deck.hand[round][1] = deck.suit[suitIndex];

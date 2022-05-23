@@ -1,4 +1,6 @@
 #include <string>
+#include <time.h>
+#include <stdlib.h>
 #include "deck.h"
 using namespace std; 
 
@@ -14,4 +16,10 @@ Deck::Deck(){
 
     }
 
+}
+
+
+int Deck::randi(int min, int max) {
+    int out = rand() % max + min;
+    return out;
 }
