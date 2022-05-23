@@ -26,6 +26,7 @@ void Play::run(){
             cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
             cin >> bet;
         }  */
+
         int gameStatus = 0;
         while (gameStatus == 0) { //somehow move all of this into its own function
             string hitsit = "NULL";
@@ -54,7 +55,7 @@ void Play::run(){
                 cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
         }
-        cout << "Your total winning: " << chips << " chips" << endl;
+       // cout << "Your total winning: " << chips << " chips" << endl;
         cout << "Play again?: ";
         cin >> yesno;
         while (yesno != "yes" && yesno != "no") {
