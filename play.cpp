@@ -4,6 +4,7 @@
 using namespace std; 
 
 void Play::run(){
+    casino game1;
     string yesno;
     cout << "Start Game: ";
     cin >> yesno;
@@ -65,5 +66,5 @@ void Play::run(){
     }
 
     cout << "Thanks for playing!" << endl;    
-cout<<chips<<endl;
+cout<<game1.chips<<endl;
 };
