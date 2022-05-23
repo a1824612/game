@@ -9,6 +9,11 @@ void Play::run(){
     string yesno;
     cout << "Start Game: ";
     cin >> yesno;
+    while (yesno != "yes" || yesno != "no") {
+        cout << "Invalid Input! Expect 'yes' or 'no'" << endl;
+        cin >> yesno;
+    }
+
     while (yesno == "yes") {
         blackjack b;
         int gameStatus = 0;
@@ -23,26 +28,24 @@ void Play::run(){
                     cout << "You lose!" << endl;
                     //lose chips
                     gameStatus = 1;
+                } else {
+                    cout << "You win!" << endl;
+                    //gain chips
+                    gameStatus = 1;            
+                }
+            } else if (hitsit=="hit") {
+                b.recieve_card();
+                if (b.went_bust()) {
+                    cout << "BUST, house wins!" << endl;
+                    //lose all bet chips
+                    gameStatus = 1;
+                }
             } else {
-                cout << "You win!" << endl;
-                //gain chips
-                gameStatus = 1;            
+                cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
-        } 
-        else if (hitsit=="hit") {
-            b.recieve_card();
-            if (b.went_bust()) {
-                cout << "BUST, house wins!" << endl;
-                //lose all bet chips
-                gameStatus = 1;
-            }
-        } else {
-            cout << "Input must be 'hit', 'sit', or '?'." << endl;
         }
     }
-    }
 
-    
-    
+    cout << "Thanks for playing!" << endl;    
 
 };
