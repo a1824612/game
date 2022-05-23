@@ -21,7 +21,7 @@ blackjack::blackjack() {
         aboveNumberIndex = deck.randi(0,3);
     }
     int suitIndex = deck.randi(0,4);
-    house = deck.randi(1,10)+deck.randi(1,10);
+    house = 10+deck.randi(1,10);
     player = cardIndex+1;           //cardIndex+1 since cardIndex is used in the cards array
     round = 1;
     deck.hand[0][0] = deck.cards[cardIndex + aboveNumberIndex]; 
