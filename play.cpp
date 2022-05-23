@@ -14,6 +14,16 @@ void Play::run(){
 
     while (yesno == "yes") {
         blackjack b;
+        betEdit * initialiser;
+        
+        int bet = 0;
+        cout << "Your Bet: ";
+        cin >> bet;
+        while(chips - bet < 0 && bet < 0){
+            cout << "Input invalid. Bet must be poitive number less than your totlal chips!";
+            cin >> bet;
+        }
+
         int gameStatus = 0;
         while (gameStatus == 0) { //somehow move all of this into its own function
             string hitsit = "NULL";
@@ -24,25 +34,25 @@ void Play::run(){
             } else if(hitsit == "sit") {
                 if(b.compare()) {
                     cout << "You lose!" << endl;
-                    //lose chips
+                    initialiser->minus_chips(bet);
                     gameStatus = 1;
                 } else {
                     cout << "You win!" << endl;
-                    //gain chips
+                    initialiser->minus_chips(bet);
                     gameStatus = 1;            
                 }
             } else if (hitsit=="hit") {
                 b.recieve_card();
                 if (b.went_bust()) {
                     cout << "BUST, house wins!" << endl;
-                    //lose all bet chips
+                    initialiser->minus_chips(bet);
                     gameStatus = 1;
                 }
             } else {
                 cout << "Input must be 'hit', 'sit', or '?'." << endl;
             }
         }
-
+        cout << "Your total winning: " << chips << " chips" << endl;
         cout << "Play again?: ";
         cin >> yesno;
         while (yesno != "yes" && yesno != "no") {
