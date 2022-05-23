@@ -13,9 +13,9 @@ void Play::run(){
     }
 
     while (yesno == "yes") {
-        cout << "up\n";
+        
         blackjack *b = new blackjack();
-        cout << "below\n";
+        
         
         
         
@@ -65,5 +65,5 @@ void Play::run(){
     }
 
     cout << "Thanks for playing!" << endl;    
-
+cout<<chips<<endl;
 };
