@@ -6,7 +6,7 @@ using namespace std;
 void Play::run(){
     casino game1;   //create a casino object
     string yesno;   //string container user asnwer to following question
-    cout << "Start Game: ";
+    cout << "Start Game('yes' or 'no'): ";
     cin >> yesno;
 
     while (yesno != "yes" && yesno != "no") {   //check that the user has given a valid input
